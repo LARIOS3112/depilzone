@@ -1,0 +1,48 @@
+<?php
+session_start();
+$id_us = $_SESSION['id'];
+//$fechah = datetime("Y-m-d H:i:s");
+////MODIFICADO POR ING. GABRIELA 03/05/2019, UPDATE
+//<!-- <9/8/19 GR - modificacion para actualizar el DNI>-->
+include ('conexionbd.php');
+$id        = $_POST['id'];
+$historia  = $_POST['historia'];
+$nombre    = $_POST['nombre'];
+$apellido  = $_POST['apellido'];
+$dni       = $_POST['dni'];
+$prefijo   = $_POST['prefijo'];
+$telefono  = $_POST['telefono'];
+$prefijo2  = $_POST['prefijo2'];
+$telefono2 = $_POST['telefono2'];
+$correo    = $_POST['correo'];
+$direccion = $_POST['direccion'];
+$status    = $_POST['status'];
+$id_sexo   = $_POST['id_sexo'];
+
+$query = "UPDATE cliente SET historia = '$historia', nombrec = '$nombre', apellidoc = '$apellido', dni = '$dni', id_sexo = '$id_sexo', prefijo = '$prefijo', telefonoc = '$telefono', prefijo2 = '$prefijo2', telefonoc2 = '$telefono2', correo = '$correo', direccion = '$direccion', status = '$status', us_mod = '$id_us', fech_mod = CURRENT_TIMESTAMP() 
+                       WHERE id = '$id'";
+$result = mysqli_query($conexion,$query);
+
+if($status == 'I'){
+    $query2 = "UPDATE citas SET id_asistencia = 4, us_mod = '$usuario', tiempo_tto = 'definitivo', fech_mod = CURRENT_TIMESTAMP()  /*cliente inactivo */
+                          WHERE id_cliente = '$id'
+                            AND id_asistencia = 1";
+    $result2 = mysqli_query($conexion, $query2);
+}
+elseif($status == 'F'){
+    $query2 = "UPDATE citas SET id_asistencia = 3, us_mod = '$usuario', tiempo_tto = 'temporal',  fech_mod = CURRENT_TIMESTAMP()  /*cliente suspendido */
+                          WHERE id_cliente = '$id'
+                            AND id_asistencia = 1";
+    $result2 = mysqli_query($conexion, $query2);
+}
+else{
+    $query2 = "UPDATE citas SET id_asistencia = 1, us_mod = '$usuario', tiempo_tto = '', motivo_no_tto= '', fech_mod = CURRENT_TIMESTAMP() /*cliente activo */
+                          WHERE id_cliente = '$id'
+                            AND id_asistencia = 3";
+    $result2 = mysqli_query($conexion, $query2);
+}
+
+
+echo $result;
+return $result;
+?>

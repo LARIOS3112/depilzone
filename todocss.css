@@ -1,0 +1,1619 @@
+/*************************** CLASES DE TODA LA APP**********************************************/
+.html_fondo{
+    height: 100%;
+    background: url(imagenes/fondointranet.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body{
+    background:rgba(0,0,0,0);
+}
+
+/**** inicio logo****/
+header.cabecerainicial{
+    max-width:100%;
+    background-color: lightgrey;
+}
+
+.css-display-topleft{
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+.css-display-topright{
+    position:absolute;
+    right:0;
+    top:0;
+}
+
+/*****fin de logo****/
+
+/*****boton de cerrar sesion****/
+.bot_sesion{
+    color: #607d8b;
+    /*color: #444242;*/
+    display:block!important;
+    -webkit-transition:-webkit-transform 0.5s;
+    -moz-transition:-moz-transform 0.5s;
+    -o-transition:-o-transform 0.5s;
+    -ms-transition:-ms-transform 0.5s;
+    transition:transform 0.5s;
+}
+
+.bot_sesion:hover{
+    color: #444242;
+    -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+    cursor: pointer;
+}
+/**************************/
+
+/***** barra de menu ****/
+.menu_style a{
+    color:#fff !important;
+    animation: animatezoom 0.6s;
+}
+
+.menu_style:hover{
+    color:#444242!important;
+    background-color:#ccc!important  
+}
+
+.menu_style a:hover{
+    color:#444242!important;
+    background-color:#ccc!important  
+}
+
+.menu_style a:hover{
+    color:#444242!important;
+}
+
+.active_menu {
+    background-color:#ccc!important;
+    border-bottom: 2px solid #444242;
+}
+
+.active_menu a {
+    color:#444242!important;  
+}
+
+/* .dropdown:hover>.dropdown-menu {
+  display: block;
+} */
+
+/***** input ****/
+.css-input{
+    padding:8px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #ccc;
+    width:100%
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #4caae1;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(190, 224, 244);
+}
+
+/*** color input-group ***/
+.input-group-text{
+    background-color: #e9f4fc;
+    border-color: #b8def9;
+}
+
+.input-group .form-control{
+    border-color: #b8def9;
+}
+
+.input-group .custom-select{
+    border-color: #b8def9;
+}
+
+.input-group .form-control:focus{
+    border-color: #4caae1;
+}
+
+.input-group .custom-select:focus{
+    border-color: #4caae1;
+}
+
+.centrar_as{
+    
+    color: blue;
+}
+
+
+/***** label ****/
+ label{
+  color: #607D8B;
+  font-weight: bold;
+}
+
+/***** label radio ****/
+ .label_radio{
+  color: #607D8B;
+  font-weight: normal;
+}
+
+/***** icono de ventana cargando ****/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.icono_carga{
+    padding-top: 20%;
+    color:#fff;
+    /*    color:#4caae1;*/
+}
+
+/***** mensajes de alerta ****/
+.posicion_alert{
+   /* position: relative;*/
+   width: 450px;
+    /*left:71%*/
+    /*float: right;*/
+}
+
+/***** boton regresar ****/
+.posicion_bot_atras{
+    bottom: 10px;
+    width:5%
+}
+
+/***** thead tablas ****/
+.css-blue{
+  color:#fff!important;
+  background-color:#4caae1!important;
+}
+
+/***** fondo de body dentro de iframe ****/
+.fondo_body{
+    background-color: transparent;
+}
+
+/***** botones ****/
+.btn-primary {
+    color: #fff;
+    border-color: #fff;
+    background-color: #4caae1;
+}
+
+.btn-primary:hover {
+    color: #444242;
+    background-color: #4caae1;
+    border-color: #4caae1;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+    color: #444242;
+    border-color: #4caae1;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    color: #444242;
+    background-color: #4caae1;
+    border-color: #4caae1;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+/*carrusel de imagenes*/
+.flechas_carrusel{
+    color: #4caae1;
+}
+
+.carousel-indicators .active {
+    background-color: #4caae1;
+}
+
+/*filas de las tablas*/
+.table-hover tbody tr:hover{
+    background-color: #a8d6f0;
+}
+
+/* checkbox tipo switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 20px;
+}
+
+.switch input {
+    display:none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #D9534F;
+    -webkit-transition: .4s;
+    transition: .4s;   
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #5CB85C;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #5CB85C;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 20px;
+}
+
+.slider.round:before {
+    border-radius: 60%;
+}
+
+.bg-sistema{
+    background-color: #bde0f4;
+}
+
+/********** botones opciones de cita ************/
+.btn-hover {
+    color: #cccccc!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover:hover {
+    color: #b3b3b3!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover1 {
+    color: #28a745!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover1:hover {
+    color: #218838!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover2 {
+    color: #dc3545!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover2:hover {
+    color: #c82333!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover3 {
+    color: #ffc107!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover3:hover {
+    color: #e0a800!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover4 {
+    color: #007bff!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover4:hover {
+    color:#0062cc!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover5 {
+    color: #454d54!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+.btn-hover5:hover {
+    color: #22262a!important;
+    background-color: transparent!important;
+    border-color: transparent!important;
+}
+
+/**/
+@media (max-width: 575px){
+    .div_imagen_header{
+        height:87px;
+    }
+    
+    .css-image{
+        height:40px;
+    }
+    
+    .menu_bar{
+        height: 40px;
+    }   
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .div_imagen_header{
+        height:100px;
+    }
+    
+    .css-image{
+        height:100px;
+    }
+    
+    .menu_bar{
+        height: 40px;
+    }
+    
+}
+       
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .div_imagen_header{
+        height:110px;
+    }
+    
+    .css-image{
+        height:110px;
+    }
+    
+/***** barra de menu ****/
+    .menu_bar{
+        height: 24px;
+    }
+    
+    .menu_bar2{
+        height: 24px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .div_imagen_header{
+        height:115px;
+    }
+    
+    .css-image{
+        height:115px;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE sesion.php**********************************************/
+
+/***** border del div de inicio de sesion ****/
+.css-sesion{
+    margin: 5% 30%;
+    padding: 2%;
+    border: dashed 4px #00a5db; border-radius: 20px;
+    background-color: white; overflow:auto; 
+}
+
+/***** titulo de inicio de sesion ****/
+.titulo_sesion{
+    text-align: center;
+    text-shadow: 5px 5px 5px #4caae1;
+    font-weight: bold;
+    color: #444242;
+}
+
+/***** footer ****/
+.cajabaja{
+    background-color:lightgrey ;
+    bottom: 0px; 
+    width: 100%;
+}
+
+.division{
+    color: #4caae1; 
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/**/
+@media (max-width: 575px){
+    .css-sesion{
+        margin: 0;
+        padding: 2%;
+    }
+    
+    .posic_sesion{
+        margin-top:150px;
+    }
+    
+    .rs{
+        width: 70px;
+        height: 40px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .css-sesion{
+        margin: 5% 10%;
+        padding: 2%;
+    }
+    
+    .posic_sesion{
+        margin-top:170px;
+    }
+    
+    .rs{
+        width: 80px;
+        height: 50px;
+    } 
+}
+       
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .css-sesion{
+        margin: 5% 15%;
+    }
+    
+    .posic_sesion{
+        margin-top:210px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .css-sesion{
+        margin: 5% 30%;
+    }
+    
+    .posic_sesion{
+        margin-top:190px;
+    }
+
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE administrador.php**********************************************/
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 180px;
+    max-width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #d3d3d3;
+    /*background: #7386D5;*/
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    min-width: 80px;
+    max-width: 80px;
+    text-align: center;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    /*border-bottom: 1px solid #4caae1;*/
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color:#fff;
+    background: #b3b3b3;
+    text-decoration: none;
+}
+
+#sidebar ul li.active>a, #sidebar a[aria-expanded="true"] {
+    color: #fff;
+    background: #b3b3b3;
+}
+
+#sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar .dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+#sidebar ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #b3b3b3;
+}
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 767px) {
+    #sidebar{
+        min-width: 30px;
+        max-width: 30px;
+        text-align: center;
+        /*margin-left: -80px !important; */
+    }
+    
+   #sidebar .dropdown-toggle::after {
+        top: auto;
+        bottom: 10px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+  
+    #sidebar ul li a {
+        padding: 15px 1px;
+    }
+    #sidebar ul li a {
+        font-size: 0.85em;
+    }
+    
+    #sidebar ul li a i {
+        margin-right: 0;
+        display: block;
+    }
+    
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+    
+    #sidebar {
+        margin-left: 0;
+    }
+
+}
+
+/**/
+@media (max-width: 575px){
+    .posic_admin_inicio{
+        margin-top:142px;
+    }
+
+    .content {
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+    .tam_iframe{
+        height: 450px;
+        width: 100%;
+    }
+    
+    .tam_img_carr{
+        height: 450px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .posic_admin_inicio{
+        margin-top:152px;
+    }
+
+    .content {
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+    
+    .tam_iframe{
+        height: 590px;
+        width: 100%;
+    }
+    
+    .tam_img_carr{
+        height: 590px;
+    }
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .posic_admin_inicio{
+        margin-top:150px;
+    }
+   
+    .content {
+        margin-left: 195px;
+        margin-right: 15px;
+    }  
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .posic_admin_inicio{
+        margin-top: 155px;
+    }  
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE sistema.php**********************************************/
+
+.contenedor{
+    margin:auto;
+    top: 25px;
+    border: 5px dashed #4caae1;
+    background: transparent;
+    border-radius: 0.25rem;
+    -moz-border-radius:0.25rem;
+    -webkit-border-radius:0.25rem;
+}
+
+/**/
+@media (max-width: 575px){
+    .content_us{
+        margin-top:0px;
+         width: 95%;
+        transform: translate(0%); 
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .content_us{
+        margin-top:0px;
+        width: 90%;
+        transform: translate(0%); 
+    }
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .content_us{
+        margin-top:0px;
+        width: 55%;
+        transform: translate(0%);
+    }
+}
+
+@media (min-width: 992px){
+    .content_us{
+        width: 42%;
+    }
+}
+
+@media (min-width: 1200px){
+    .content_us{
+        width: 33%;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE usuarios.php**********************************************/
+/**/
+@media (max-width: 575px){
+    .content_edit_us{
+        margin-top:100px;
+    }
+    
+    .scroll_tab_us{
+        height: 550px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .content_edit_us{
+        margin-top:100px;
+    }
+    
+     .scroll_tab_us{
+        height: 550px;
+        overflow-y: scroll;
+    }   
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .content_edit_us{
+        margin-top:100px;
+    }
+    
+    .scroll_tab_us{
+        height: 800px;
+        overflow-y: scroll;
+    }      
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .scroll_tab_us{
+        height: 580px;
+        overflow-y: scroll;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE coordinador.php y marketing.php **********************************************/
+/**/
+@media (max-width: 575px){
+    .posic_coord{
+        margin-top:150px;
+        height: calc(100% - 150px);
+    }
+      
+    .tam_iframe2{
+        height: 100%;
+        width: 100%;
+        /*border: 2px solid blue;*/
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .posic_coord{
+        margin-top:160px;
+        height: calc(100% - 160px);
+    }
+      
+    .tam_iframe2{
+        height:100%;
+        width: 100%;
+    }
+  
+}
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE asig_diarias.php**********************************************/
+/**/
+@media (max-width: 575px){
+    .scroll_tab_asi_dia{
+        height: 350px;
+        overflow-y: scroll;
+    }
+ 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_tab_asi_dia{
+        height: 490px;
+        overflow-y: scroll;
+    }
+  
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE asig_prefer.php**********************************************/
+/**/
+@media (max-width: 575px){
+    .scroll_tab_asi_pref{
+        height: 450px;
+        overflow-y: scroll;
+    }
+ 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_tab_asi_pref{
+        height: 600px;
+        overflow-y: scroll;
+    }
+  
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE agenda.php**********************************************/
+
+.font_size {
+    font-size: 13px;
+}
+
+.font_size2 {
+    font-size: 11px;
+}
+
+.bd-callout {
+    border-right-width: 15px;
+    border-radius: .25rem;
+     /*border-right-color: #f0ad4e !important;*/
+}
+
+/* color por tipo de cliente*/
+
+.bd-callout-color{
+    border-right-color: #ff80ff; /* cliente especial */
+}
+
+.bd-callout-color2{
+    border-right-color: #c68c53; /* cortesia */
+}
+
+.bd-callout-color3{
+    border-right-color: #ff6100; /* no interesado */
+}
+
+.bd-callout-color4{
+    border-right-color: #cdcdcd; /* normal */
+}
+
+.bd-callout-color5{
+    border-right-color: #a64dff; /* morado */
+}
+
+
+
+/*color lista de citas por tipo*/
+.bg-card-list{
+    background-color: #b3ffff;  /* consulta */
+}
+
+.bg-card-list > .bg-list{
+    background-color: #cef4f4;  /* titulo consulta */
+}
+
+.bg-card-list2{
+    background-color: #e6ffb3;  /* mantenimiento  */
+}
+
+.bg-card-list2 > .bg-list{
+    background-color: #ecf4dc;   /* titulo mantenimiento */
+}
+
+.bg-card-list3{
+    background-color: #ffccb3;   /* en espera */
+}
+
+.bg-card-list3 > .bg-list{
+    background-color: #ffddcc;  /* titulo en espera */
+}
+
+.bg-card-list4{
+    background-color: #d9b3ff;    /* retoque */
+}
+
+.bg-card-list4 > .bg-list{
+    background-color: #e6ccff;   /* titulo retoque */
+}
+
+.bg-card-list5{
+    background-color: #dcdcdc ;    /* sesion */
+}
+
+.bg-card-list5 > .bg-list{
+    background-color: #f2f2f2;   /* titulo sesion */
+}
+
+.bg-list-pagado{
+     background-color: #a1e39c;
+}
+
+.bg-list-abonado{
+     background-color: #fbfebb;
+}
+
+/**************************/
+
+@media (max-width: 575px){
+    .scroll_agenda{
+        height: 300px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_agenda{
+        height: 475px;
+        overflow-y: scroll;
+    } 
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE citas3.php, citas4.php, citas.php **********************************************/
+.css-cuadroc{
+    border: dashed 4px #00a5db;
+    border-radius: 0.25rem;  
+}
+
+.bot_position{
+    position: relative;
+    top: -15px;
+}
+
+.height_div{
+    height: 36px;
+}
+
+.hover_collapse:hover{
+    background-color: #4FABE1;
+    color: #fff;
+    border-color: #fff;    
+}
+
+@media (max-width: 575px){
+    .scroll_cita{
+        height: 244px;
+        overflow-y: scroll;
+    }  
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_cita{
+        height: 480px;
+        overflow-y: scroll;
+    }   
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .css-cuadroc{
+        width: 85%;
+        transform: translate(9%); 
+    } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+    .css-cuadroc{
+        width: 85%;
+        transform: translate(9%); 
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE citas.php **********************************************/
+.color_status_pag{
+    background-color: #c1f0cc;
+}
+
+.color_status_pag2{
+    background-color: #ffecb3;
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE citas4.php **********************************************/
+.tam_text{
+    font-size: 10px;
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE nuevaficha1.php**********************************************/
+.css-cuadro_ficha{
+    border: dashed 4px #00a5db;
+    border-radius: 0.25rem; 
+    background: transparent;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .css-cuadro_ficha{
+        width: 85%;
+        transform: translate(9%); 
+    }  
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .css-cuadro_ficha{
+        width: 85%;
+        transform: translate(9%); 
+    } 
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+    .css-cuadro_ficha{
+        width: 70%;
+        transform: translate(22%); 
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE agendar.php **********************************************/
+/**/
+@media (max-width: 575px){
+    .tam_th{
+        width: 15%;
+    }
+    
+    .tam_th1{
+        width: 60%;
+    }
+ 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .tam_th{
+        width: 15%;
+    }
+    
+    .tam_th1{
+        width: 50%;
+    }
+  
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .tam_th{
+        width: 25%;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .tam_th{
+        width: 20%;
+    }  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+    .tam_th{
+        width: 15%;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE buscador.php **********************************************/
+/**/
+@media (max-width: 575px){
+    .scroll_tab_buscador{
+        height: 380px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_tab_buscador{
+        height: 530px;
+        overflow-y: scroll;
+    }
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .scroll_tab_buscador{
+        height: 530px;
+        overflow-y: scroll;
+    }
+    
+    .tam_th2{
+        width: 15%;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .scroll_tab_buscador{
+        height: 510px;
+        overflow-y: scroll;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE asig_estadist.php **********************************************/
+/**/
+@media (max-width: 575px){
+    .tam_container{
+        height: 240px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .tam_container{
+        height: 500px;
+    }
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .tam_container{
+        height: 540px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .tam_container{
+        height: 540px;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE anuncios.php **********************************************/
+/*** boton de cargar imagen ***/
+.boton_img2{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 15px;
+    margin-right: 0;
+    cursor:pointer; cursor: hand;
+    border: 4px dashed #b3b3b3;
+    border-color: #b3b3b3;
+    color: #b3b3b3;
+}
+
+.boton_img2:hover{
+    border-color: #595959;
+    color: #595959;
+}
+
+div.upload input {
+    cursor:pointer; cursor: hand;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block !important;
+    width: 150px !important;
+    height: 100px !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+
+.style_font{
+    font-weight: bold;  
+}
+
+/* imagen vista previa */
+.img_prev{
+    /*width: 170px;*/
+    height: 100px;
+}
+
+.tam_img_thumb{
+    /*width: 170px;*/
+    height: 100px;
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE preferen_dia.php *********************************/
+/**/
+@media (max-width: 575px){
+    .scroll_tab_pref{
+        height: 385px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_tab_pref{
+        height: 535px;
+        overflow-y: scroll;
+    }
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .scroll_tab_pref{
+        height: 535px;
+        overflow-y: scroll;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .scroll_tab_pref{
+        height: 500px;
+        overflow-y: scroll;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE todos los archivos de listas *********************************/
+/**/
+@media (max-width: 575px){
+    .scroll_tab_ndt{
+        height: 400px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_tab_ndt{
+        height: 550px;
+        overflow-y: scroll;
+    }
+}
+        
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE estadisticas.php **********************************************/
+/**/
+@media (max-width: 575px){
+    .tam_container2{
+        height: 240px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .tam_container2{
+        height: 510px;
+    }
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .tam_container2{
+        height: 510px;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+    .tam_container2{
+        height: 500px;
+    }
+}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE pruebapreferente3.php *********************************/
+/**/
+@media (max-width: 575px){
+    .scroll_tab_pref3{
+        height: 400px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_tab_pref3{
+        height: 590px;
+        overflow-y: scroll;
+    }
+}
+        
+/*********************************************************************************************/
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+/*************************** CLASES DE asignaciones.php *********************************/
+/**/
+@media (max-width: 575px){
+    .scroll_asig{
+        height: 360px;
+        overflow-y: scroll;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+    .scroll_asig{
+        height: 510px;
+        overflow-y: scroll;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+    .scroll_asig{
+        height: 530px;
+        overflow-y: scroll;
+    }
+}
+        
+/*********************************************************************************************/
+/*************************************burbuja y numero de notificacion********************************************************/
+/*********************************************************************************************/
+
+element.style {
+    border-radius: 10px;
+}
+
+.label-danger {
+    background-color: #d9534f;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #9d9d9d;
+}
+
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+
+/**/
+@media (max-width: 575px){
+ 
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px){
+  
+}
+        
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
+  
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px){
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px){
+  
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #000000;
+    background-color: transparent;
+}
+
+.btn-link:hover {
+    color: #000000;
+    text-decoration: none !important;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-link:focus, .btn-link.focus {
+    text-decoration: none !important;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+a{
+    color:inherit;
+    font-size: 100%;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:not([href]):not([tabindex]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:not([href]):not([tabindex]):focus {
+    outline: 0;
+}
+
+/* tabla con filtro */
+
+    .row{
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+        .clickable{
+            cursor: pointer;   
+        }
+
+        .panel-heading div {
+            margin-top: -18px;
+            font-size: 15px;
+        }
+        .panel-heading div span{
+            margin-left:5px;
+        }
+        .panel-body{
+            display: none;
+        }
+
+        @media screen and (max-width: 767px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .table-responsive > .table-bordered {
+    border: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:first-child,
+  .table-responsive > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+  .table-responsive > .table-bordered > thead > tr > td:first-child,
+  .table-responsive > .table-bordered > tbody > tr > td:first-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .table-responsive > .table-bordered > thead > tr > th:last-child,
+  .table-responsive > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+  .table-responsive > .table-bordered > thead > tr > td:last-child,
+  .table-responsive > .table-bordered > tbody > tr > td:last-child,
+  .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .table-responsive > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive > .table-bordered > tbody > tr:last-child > td,
+  .table-responsive > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: transparent;
+
+  }
